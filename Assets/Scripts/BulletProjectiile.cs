@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 public class BulletProjectiile : MonoBehaviour
 {
+    [SerializeField] private Transform vfxHitRed;
     private Rigidbody bulletRigidbody;
 
     private void Awake()
@@ -18,6 +19,16 @@ public class BulletProjectiile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+       // if (other.GetComponent<BulletTarget>() ! = null)
+       // {
+            //Hit target
+       // }
+       
+       // else
+       // {
+            //Hit something else
+            Instantiate(vfxHitRed, transform.position, Quaternion.identity);
+       // }
         Destroy(gameObject);
     }
 }

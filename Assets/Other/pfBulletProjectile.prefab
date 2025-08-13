@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d77b551241309d4096eb47da34b249e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vfxHitRed: {fileID: 6726235287692014776, guid: 749e84cbcca4a2b44af15c589fdb46b6, type: 3}
 --- !u!54 &4252526188023668912
 Rigidbody:
   m_ObjectHideFlags: 0
