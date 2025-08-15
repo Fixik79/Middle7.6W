@@ -13,22 +13,14 @@ public class BulletProjectiile : MonoBehaviour
 
     private void Start()
     {
-        float speed = 10f;
+        float speed = 30f;
         bulletRigidbody.linearVelocity = transform.forward * speed;
     }
 
     private void OnTriggerEnter(Collider other)
-    {
-       // if (other.GetComponent<BulletTarget>() ! = null)
-       // {
-            //Hit target
-       // }
-       
-       // else
-       // {
+    {     
             //Hit something else
-            Instantiate(vfxHitRed, transform.position, Quaternion.identity);
-       // }
+            Instantiate(vfxHitRed, transform.position, Quaternion.identity);       
         Destroy(gameObject);
     }
 }
