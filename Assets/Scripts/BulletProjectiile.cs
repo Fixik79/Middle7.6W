@@ -4,7 +4,8 @@ using System.Collections.Generic;
 public class BulletProjectiile : MonoBehaviour
 {
     [SerializeField] private Transform vfxHitRed;
-    private Rigidbody bulletRigidbody;
+    [SerializeField] private float speed;    
+   private Rigidbody bulletRigidbody;
 
     private void Awake()
     {
@@ -13,7 +14,7 @@ public class BulletProjectiile : MonoBehaviour
 
     private void Start()
     {
-        float speed = 30f;
+        //float speed = 5f;
         bulletRigidbody.linearVelocity = transform.forward * speed;
     }
 
